@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Экран 3</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <section class="screen" id="video-pano" data-screen="3">
+    <video
+      id="video-part-1"
+      preload="auto"
+      data-emersion = "panorama123.ogv"
+      data-immersion = "immersion123.ogv"
+      src="panorama123.ogv"
+      type="video/ogg"
+      muted
+      loop
+      autoplay
+      data-sync="0"
+      width="4096" 
+      height="1024">
+    </video>
+    <video
+      id="video-part-2"
+      data-emersion = "panorama456.ogv"
+      data-immersion = "immersion456.ogv"
+      src="panorama456.ogv"
+      type="video/ogg"
+      preload="auto"
+      muted
+      loop
+      autoplay
+      data-sync="0"
+      width="4096" 
+      height="1024">
+    </video>
+    <video
+      id="video-part-3"
+      data-emersion = "panorama789.ogv"
+      data-immersion = "immersion789.ogv"
+      src="panorama789.ogv"
+      type="video/ogg"
+      preload="auto"
+      muted
+      loop
+      autoplay
+      data-sync="0"
+      width="4096" 
+      height="1024">
+    </video>
+    <video
+      id="video-part-4"
+      data-emersion = "panorama123.ogv"
+      data-immersion = "immersion123.ogv"
+      src="panorama123.ogv"
+      type="video/ogg"
+      preload="auto"
+      muted
+      loop
+      autoplay
+      data-sync="0"
+      width="4096" 
+      height="1024">
+    </video>
+  </section>  
+  <script src="http://yandex.st/jquery/2.1.1/jquery.min.js"></script>
+  <script src="jquery.mousewheel.min.js"></script>
+  <script src="http://127.0.0.1:8080/socket.io/socket.io.js"></script>
+  <script src="panoClient.js"></script>
+  
+</body>
+</html>

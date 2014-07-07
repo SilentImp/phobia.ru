@@ -1,0 +1,17 @@
+{
+  "name": "4 screen panorama server",
+  "version": "0.0.0",
+  "description": "",
+  "main": "panoServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "silentimp",
+  "license": "ISC",
+  "dependencies": {
+    "express": "~4.4.5",
+    "package.json": "~0.0.0",
+    "socket.io": "~1.0.6"
+  },
+  "devDependencies": {}
+}
