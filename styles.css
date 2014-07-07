@@ -22,7 +22,7 @@ html,body{
 	background: url(panorama.jpg) 0 0 repeat-x;
 	}
 	#video-pano video{
-		display: none;
+		/*display: none;*/
 		position: absolute;
 		top: 0;
 		width: 4096px;

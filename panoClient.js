@@ -212,7 +212,7 @@
         // console.log('переход назад от ', pos-12288, ' к ', pos);
       }
 
-      this.checkVisibility(pos);
+      // this.checkVisibility(pos);
 
       this.changed = false;
       this.video.style.left = pos+"px";
@@ -294,8 +294,8 @@
   }
 
   panoClient.prototype.syncAbsoluteAndPlay = function(video){
-    video.style.display = "block";
-    video.play();
+    // video.style.display = "block";
+    // video.play();
 
     // синхронизация с расчетным временем
     var current_time = new Date().getTime()/1000,
@@ -347,7 +347,7 @@
     // }
     // setTimeout($.proxy(function(){this.posFlag = true;},this),50);
     // this.posFlag = false;
-    this.socket.emit('position',event.deltaY*3);
+    this.socket.emit('position',event.deltaY);
   };
 
   $(window).load(onDOMReady);
