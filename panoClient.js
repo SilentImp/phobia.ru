@@ -347,7 +347,7 @@
     // }
     // setTimeout($.proxy(function(){this.posFlag = true;},this),50);
     // this.posFlag = false;
-    this.socket.emit('position',event.deltaY);
+    this.socket.emit('position',event.deltaY*3);
   };
 
   $(window).load(onDOMReady);
