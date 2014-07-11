@@ -13,30 +13,29 @@ html,body{
 #video-pano{
 	pointer-events: none;
 	position: fixed;
-	width: 16384px;
-	height: 1024px;
+	width: 8192px;
+	height: 600px;
 	top: 0;
 	left: 0;
 	font-size: 0;
 	line-height: 0;
-	background: url(panorama.jpg) 0 0 repeat-x;
 	}
 	#video-pano video{
 		/*display: none;*/
 		position: absolute;
 		top: 0;
-		width: 4096px;
-		height: 1024px;
+		width: 2048px;
+		height: 600px;
 		}
 	#video-part-1{
 		left: 0;
 		}
 	#video-part-2{
-		left: 4096px;
+		left: 2048px;
 		}
 	#video-part-3{
-		left: 8192px;
+		left: 4096px;
 		}
 	#video-part-4{
-		left: 12288px;
+		left: 6144px;
 		}

@@ -15,6 +15,14 @@
     // основной контейнер видео
     this.video = document.getElementById('video-pano');
 
+    this.screenWidth = 2048;
+    this.screenHeight = 600;
+
+    this.delta_1 = this.screenWidth*1;
+    this.delta_2 = this.screenWidth*2;
+    this.delta_3 = this.screenWidth*3;
+    this.delta_4 = this.screenWidth*4;
+
     // принимать ли позишен
     this.posFlag = true;
 
@@ -202,13 +210,13 @@
     if(this.changed){
 
       var pos = this.position-this.offset;
-      pos = pos % 12288;
+      pos = pos % this.delta_3;
 
       if(pos>=0){
-        pos-=12288;
+        pos-=this.delta_3;
         // console.log('переход вперед от ', pos+12288, ' к ', pos);
-      }else if((pos-this.width)<=-16384){
-        pos+=12288;
+      }else if((pos-this.width)<=-this.delta_4){
+        pos+=this.delta_3;
         // console.log('переход назад от ', pos-12288, ' к ', pos);
       }
 

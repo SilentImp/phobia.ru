@@ -15,7 +15,7 @@
                           {'width':0, 'offset': 0}
                         ];
     this.sockets =      [null, null, null, null];
-    this.position =     -4096;
+    this.position =     -2048;
     this.timer =        0;
 
     // стартуем сервер
