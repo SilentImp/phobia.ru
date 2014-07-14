@@ -10,9 +10,11 @@
     this.io =           require('socket.io').listen(this.app);
     this.screens =      [
                           {'width':0, 'offset': 0}, 
+                          {'width':0, 'offset': 0}, 
+                          {'width':0, 'offset': 0}, 
                           {'width':0, 'offset': 0}
                         ];
-    this.sockets =      [null, null];
+    this.sockets =      [null, null, null, null];
     this.position =     -4096;
     this.timer =        0;
 
