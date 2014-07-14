@@ -85,6 +85,7 @@
     this.socket.on("canvasDetails", $.proxy(this.canvasDetails,this));
     this.socket.on("reconnect", $.proxy(this.resize,this));
     this.socket.on("startTime", $.proxy(this.timeSync,this));
+    this.socket.on("sync", $.proxy(this.timeSync,this));
     this.socket.on("emersion", $.proxy(this.emersion,this));
     this.socket.on("immersion", $.proxy(this.immersion,this));
     this.socket.on("emersionStart", $.proxy(this.emersionStart,this));

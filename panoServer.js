@@ -80,15 +80,19 @@
         server = this;
 
     // сохранили сокет
-    this.sockets[screen_number] = socket;
+    server.sockets[screen_number] = socket;
 
     // передали время старта ролика
-    socket.emit('startTime', this.start_time);
+    socket.emit('startTime', server.start_time);
 
     // расчитали смещение экрана
     if(screen_number>0){
-      this.screens[screen_number].offset = this.getOffset(screen_number);
+      server.screens[screen_number].offset = server.getOffset(screen_number);
     }
+
+    // setInterval(function(){
+    //   server.broadcast('sync',server.start_time);
+    // }, 60000);
 
     // получили данные о разрешении экрана
     socket.on('disconnect', function(){
