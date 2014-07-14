@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: Helvetica, Arial, sans-serif;
+	pointer-events: none;
 	}
 html,body{
 	width: 100%;
@@ -11,9 +12,8 @@ html,body{
 	background-color: #1B689E;
 	}
 #video-pano{
-	pointer-events: none;
 	position: fixed;
-	width: 8192px;
+	width: 16384px;
 	height: 600px;
 	top: 0;
 	left: 0;
@@ -21,21 +21,20 @@ html,body{
 	line-height: 0;
 	}
 	#video-pano video{
-		/*display: none;*/
 		position: absolute;
 		top: 0;
-		width: 2048px;
+		width: 4096px;
 		height: 600px;
 		}
 	#video-part-1{
 		left: 0;
 		}
-	#video-part-2{
-		left: 2048px;
-		}
-	#video-part-3{
+	#video-part-1{
 		left: 4096px;
 		}
-	#video-part-4{
-		left: 6144px;
+	#video-part-2{
+		left: 8192px;
+		}
+	#video-part-3{
+		left: 12288px;
 		}
