@@ -186,8 +186,11 @@
     // отменяем событие по окончанию проигрывания ролика
     var index = this.videos.length;
     while(index--){
+      this.videos[index].loop = true;
+      this.videos[index].autoplay = true;
       $(this.videos[index]).off('ended');
     }
+
 
   };
 
