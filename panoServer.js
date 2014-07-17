@@ -90,9 +90,9 @@
       server.screens[screen_number].offset = server.getOffset(screen_number);
     }
 
-    setInterval(function(){
-      server.broadcast('sync',server.start_time);
-    }, 1000);
+    // setInterval(function(){
+    //   server.broadcast('sync',server.start_time);
+    // }, 1000);
 
     // получили данные о разрешении экрана
     socket.on('disconnect', function(){
